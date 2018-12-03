@@ -1,4 +1,6 @@
 language: java
+ignore:
+  - "Engine.java"
 script:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=false -B -V
   - mvn cobertura:cobertura
